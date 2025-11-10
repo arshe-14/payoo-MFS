@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payoo</title>
+    <!-- CSS Link Start  -->
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- CSS Link End  -->
+
+    <!-- Google Font Start  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asimovian&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Covered+By+Your+Grace&family=Dancing+Script:wght@400..700&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Font End  -->
+  </head>
+  <body>
+    <div class="mx-auto text-center">
+      <!-- Mobile Device Part Start  -->
+      <div class="mockup-phone">
+        <!-- Error Message Part Start  -->
+        <div class="toast toast-center" hidden id="errorMsg">
+          <div class="alert alert-info bg-red-500">
+            <span>Wrong Information</span>
+          </div>
+        </div>
+        <!-- Error Message Part End  -->
+
+        <!-- Success Message Part Start  -->
+        <div class="toast toast-center" hidden id="successMsg">
+          <div class="alert alert-info bg-green-500">
+            <span>Correct Information</span>
+          </div>
+        </div>
+
+        <!-- Success Message Part End  -->
+        <div class="mockup-phone-camera"></div>
+        <div
+          class="mockup-phone-display w-[450px] text-white grid place-content-center bg-[#F4F5F7]"
+        >
+          <!-- Mobile Content Start  -->
+          <div class="rounded-2xl py-8 bg-[#F4F5F7]">
+            <div>
+              <picture
+                ><img
+                  src="images/logo.png"
+                  alt="logo.png"
+                  class="m-auto mt-[0px]"
+              /></picture>
+            </div>
+            <div class="card bg-white mt-[-160px] rounded-xl">
+              <div class="card-body">
+                <div class="fieldset">
+                  <label
+                    class="label font-outfit font-medium text-[16px] text-[#080808] mt-[16px] mb-[12px]"
+                    >Mobile Number</label
+                  >
+                  <input
+                    type="text"
+                    class="input bg-[#F4F5F7] border-none rounded-4xl py-[16px] text-[#080808] px-[20px] outline-0"
+                    placeholder="Enter your number"
+                    id="phoneNumber"
+                  />
+                  <label
+                    class="label font-outfit font-medium text-[16px] text-[#080808] mt-[16px] mb-[12px]"
+                    >4 Digit Pin</label
+                  >
+                  <input
+                    type="password"
+                    class="input bg-[#F4F5F7] border-none rounded-4xl py-[16px] text-[#080808] px-[20px] outline-0"
+                    placeholder="Enter 4 Digit Pin"
+                    id="pinNumber"
+                  />
+                  <div><a class="link link-hover">Forgot password?</a></div>
+                  <button
+                    class="btn btn-neutral mt-[16px] rounded-4xl bg-[#0874F2] border-none font-outfit w-[338px] py-[14px] font-semibold text-[20px] text=[#FFFFFF]"
+                    id="loginBtn"
+                  >
+                    Login
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Content End  -->
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Device Part End  -->
+
+    <!-- JS Link Start  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="js/script.js"></script>
+    <!-- JS Link End  -->
+  </body>
+</html>
